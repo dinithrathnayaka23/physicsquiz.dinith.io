@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BrainBuzz Paper 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='paper_3.css'>
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20210414/ourmid/pngtree-quiz-sign-icon-questions-png-image_3129181.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src='paper_3.js'></script>
+</head>
+<body>
+    <h2 id="timer">00:00:00</h2>
+
+<form id="quizForm">
+    <div class="question">
+        <img src="question 01.jpg" alt="question 01">
+        <p>1</p><input type="radio" name="q1" value="0">
+        <p>2</p><input type="radio" name="q1" value="1">
+        <p>3</p><input type="radio" name="q1" value="0">
+        <p>4</p><input type="radio" name="q1" value="0">
+        <p>5</p><input type="radio" name="q1" value="0">
+    </div>
+
+
+    <div class="question">
+        <img src="question 02.jpg" alt="question 02">
+        <p>1</p><input type="radio" name="q2" value="0">
+        <p>2</p><input type="radio" name="q2" value="0">
+        <p>3</p><input type="radio" name="q2" value="0">
+        <p>4</p><input type="radio" name="q2" value="1">
+        <p>5</p><input type="radio" name="q2" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 03.jpg" alt="question 03">
+        <p>1</p><input type="radio" name="q3" value="0">
+        <p>2</p><input type="radio" name="q3" value="0">
+        <p>3</p><input type="radio" name="q3" value="0">
+        <p>4</p><input type="radio" name="q3" value="0">
+        <p>5</p><input type="radio" name="q3" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 04.jpg" alt="question 04">
+        <p>1</p><input type="radio" name="q4" value="0">
+        <p>2</p><input type="radio" name="q4" value="0">
+        <p>3</p><input type="radio" name="q4" value="0">
+        <p>4</p><input type="radio" name="q4" value="0">
+        <p>5</p><input type="radio" name="q4" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 05.jpg" alt="question 05">
+        <p>1</p><input type="radio" name="q5" value="0">
+        <p>2</p><input type="radio" name="q5" value="1">
+        <p>3</p><input type="radio" name="q5" value="0">
+        <p>4</p><input type="radio" name="q5" value="0">
+        <p>5</p><input type="radio" name="q5" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 06.jpg" alt="question 06">
+        <p>1</p><input type="radio" name="q6" value="0">
+        <p>2</p><input type="radio" name="q6" value="0">
+        <p>3</p><input type="radio" name="q6" value="1">
+        <p>4</p><input type="radio" name="q6" value="0">
+        <p>5</p><input type="radio" name="q6" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 07.jpg" alt="question 07">
+        <p>1</p><input type="radio" name="q7" value="0">
+        <p>2</p><input type="radio" name="q7" value="0">
+        <p>3</p><input type="radio" name="q7" value="0">
+        <p>4</p><input type="radio" name="q7" value="0">
+        <p>5</p><input type="radio" name="q7" value="1">
+    </div>
+    
+    <div class="question">
+        <img src="question 08.jpg" alt="question 08">
+        <p>1</p><input type="radio" name="q8" value="0">
+        <p>2</p><input type="radio" name="q8" value="0">
+        <p>3</p><input type="radio" name="q8" value="0">
+        <p>4</p><input type="radio" name="q8" value="1">
+        <p>5</p><input type="radio" name="q8" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 09.jpg" alt="question 09">
+        <p>1</p><input type="radio" name="q9" value="0">
+        <p>2</p><input type="radio" name="q9" value="0">
+        <p>3</p><input type="radio" name="q9" value="1">
+        <p>4</p><input type="radio" name="q9" value="0">
+        <p>5</p><input type="radio" name="q9" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 10.jpg" alt="question 10">
+        <p>1</p><input type="radio" name="q10" value="1">
+        <p>2</p><input type="radio" name="q10" value="0">
+        <p>3</p><input type="radio" name="q10" value="0">
+        <p>4</p><input type="radio" name="q10" value="0">
+        <p>5</p><input type="radio" name="q10" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 11.jpg" alt="question 11">
+        <p>1</p><input type="radio" name="q11" value="0">
+        <p>2</p><input type="radio" name="q11" value="0">
+        <p>3</p><input type="radio" name="q11" value="0">
+        <p>4</p><input type="radio" name="q11" value="1">
+        <p>5</p><input type="radio" name="q11" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 12.jpg" alt="question 12">
+        <p>1</p><input type="radio" name="q12" value="0">
+        <p>2</p><input type="radio" name="q12" value="0">
+        <p>3</p><input type="radio" name="q12" value="0">
+        <p>4</p><input type="radio" name="q12" value="1">
+        <p>5</p><input type="radio" name="q12" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 13.jpg" alt="question 13">
+        <p>1</p><input type="radio" name="q13" value="0">
+        <p>2</p><input type="radio" name="q13" value="0">
+        <p>3</p><input type="radio" name="q13" value="1">
+        <p>4</p><input type="radio" name="q13" value="0">
+        <p>5</p><input type="radio" name="q13" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 14.jpg" alt="question 14">
+        <p>1</p><input type="radio" name="q14" value="0">
+        <p>2</p><input type="radio" name="q14" value="0">
+        <p>3</p><input type="radio" name="q14" value="0">
+        <p>4</p><input type="radio" name="q14" value="0">
+        <p>5</p><input type="radio" name="q14" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 15.jpg" alt="question 15">
+        <p>1</p><input type="radio" name="q15" value="0">
+        <p>2</p><input type="radio" name="q15" value="1">
+        <p>3</p><input type="radio" name="q15" value="0">
+        <p>4</p><input type="radio" name="q15" value="0">
+        <p>5</p><input type="radio" name="q15" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 16.jpg" alt="question 16">
+        <p>1</p><input type="radio" name="q16" value="0">
+        <p>2</p><input type="radio" name="q16" value="0">
+        <p>3</p><input type="radio" name="q16" value="0">
+        <p>4</p><input type="radio" name="q16" value="1">
+        <p>5</p><input type="radio" name="q16" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 17.jpg" alt="question 17">
+        <p>1</p><input type="radio" name="q17" value="1">
+        <p>2</p><input type="radio" name="q17" value="0">
+        <p>3</p><input type="radio" name="q17" value="0">
+        <p>4</p><input type="radio" name="q17" value="0">
+        <p>5</p><input type="radio" name="q17" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 18.jpg" alt="question 18">
+        <p>1</p><input type="radio" name="q18" value="0">
+        <p>2</p><input type="radio" name="q18" value="0">
+        <p>3</p><input type="radio" name="q18" value="1">
+        <p>4</p><input type="radio" name="q18" value="0">
+        <p>5</p><input type="radio" name="q18" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 19.jpg" alt="question 19">
+        <p>1</p><input type="radio" name="q19" value="0">
+        <p>2</p><input type="radio" name="q19" value="0">
+        <p>3</p><input type="radio" name="q19" value="0">
+        <p>4</p><input type="radio" name="q19" value="0">
+        <p>5</p><input type="radio" name="q19" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 20.jpg" alt="question 20">
+        <p>1</p><input type="radio" name="q20" value="0">
+        <p>2</p><input type="radio" name="q20" value="0">
+        <p>3</p><input type="radio" name="q20" value="0">
+        <p>4</p><input type="radio" name="q20" value="1">
+        <p>5</p><input type="radio" name="q20" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 21.jpg" alt="question 21">
+        <p>1</p><input type="radio" name="q21" value="1">
+        <p>2</p><input type="radio" name="q21" value="0">
+        <p>3</p><input type="radio" name="q21" value="0">
+        <p>4</p><input type="radio" name="q21" value="0">
+        <p>5</p><input type="radio" name="q21" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 22.jpg" alt="question 22">
+        <p>1</p><input type="radio" name="q22" value="0">
+        <p>2</p><input type="radio" name="q22" value="1">
+        <p>3</p><input type="radio" name="q22" value="0">
+        <p>4</p><input type="radio" name="q22" value="0">
+        <p>5</p><input type="radio" name="q22" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 23.jpg" alt="question 23">
+        <p>1</p><input type="radio" name="q23" value="0">
+        <p>2</p><input type="radio" name="q23" value="1">
+        <p>3</p><input type="radio" name="q23" value="0">
+        <p>4</p><input type="radio" name="q23" value="0">
+        <p>5</p><input type="radio" name="q23" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 24.jpg" alt="question 24">
+        <p>1</p><input type="radio" name="q24" value="0">
+        <p>2</p><input type="radio" name="q24" value="0">
+        <p>3</p><input type="radio" name="q24" value="0">
+        <p>4</p><input type="radio" name="q24" value="0">
+        <p>5</p><input type="radio" name="q24" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 25.jpg" alt="question 25">
+        <p>1</p><input type="radio" name="q25" value="0">
+        <p>2</p><input type="radio" name="q25" value="0">
+        <p>3</p><input type="radio" name="q25" value="0">
+        <p>4</p><input type="radio" name="q25" value="1">
+        <p>5</p><input type="radio" name="q25" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 26.jpg" alt="question 26">
+        <p>1</p><input type="radio" name="q26" value="0">
+        <p>2</p><input type="radio" name="q26" value="0">
+        <p>3</p><input type="radio" name="q26" value="1">
+        <p>4</p><input type="radio" name="q26" value="0">
+        <p>5</p><input type="radio" name="q26" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 27.jpg" alt="question 27">
+        <p>1</p><input type="radio" name="q27" value="0">
+        <p>2</p><input type="radio" name="q27" value="0">
+        <p>3</p><input type="radio" name="q27" value="0">
+        <p>4</p><input type="radio" name="q27" value="1">
+        <p>5</p><input type="radio" name="q27" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 28.jpg" alt="question 28">
+        <p>1</p><input type="radio" name="q28" value="0">
+        <p>2</p><input type="radio" name="q28" value="0">
+        <p>3</p><input type="radio" name="q28" value="0">
+        <p>4</p><input type="radio" name="q28" value="0">
+        <p>5</p><input type="radio" name="q28" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 29.jpg" alt="question 29">
+        <p>1</p><input type="radio" name="q29" value="0">
+        <p>2</p><input type="radio" name="q29" value="1">
+        <p>3</p><input type="radio" name="q29" value="0">
+        <p>4</p><input type="radio" name="q29" value="0">
+        <p>5</p><input type="radio" name="q29" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 30.jpg" alt="question 30">
+        <p>1</p><input type="radio" name="q30" value="0">
+        <p>2</p><input type="radio" name="q30" value="0">
+        <p>3</p><input type="radio" name="q30" value="1">
+        <p>4</p><input type="radio" name="q30" value="0">
+        <p>5</p><input type="radio" name="q30" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 31.jpg" alt="question 31">
+        <p>1</p><input type="radio" name="q31" value="0">
+        <p>2</p><input type="radio" name="q31" value="0">
+        <p>3</p><input type="radio" name="q31" value="0">
+        <p>4</p><input type="radio" name="q31" value="1">
+        <p>5</p><input type="radio" name="q31" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 32.jpg" alt="question 32">
+        <p>1</p><input type="radio" name="q32" value="0">
+        <p>2</p><input type="radio" name="q32" value="1">
+        <p>3</p><input type="radio" name="q32" value="0">
+        <p>4</p><input type="radio" name="q32" value="0">
+        <p>5</p><input type="radio" name="q32" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 33.jpg" alt="question 33">
+        <p>1</p><input type="radio" name="q33" value="0">
+        <p>2</p><input type="radio" name="q33" value="1">
+        <p>3</p><input type="radio" name="q33" value="0">
+        <p>4</p><input type="radio" name="q33" value="0">
+        <p>5</p><input type="radio" name="q33" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 34.jpg" alt="question 34">
+        <p>1</p><input type="radio" name="q34" value="0">
+        <p>2</p><input type="radio" name="q34" value="1">
+        <p>3</p><input type="radio" name="q34" value="0">
+        <p>4</p><input type="radio" name="q34" value="0">
+        <p>5</p><input type="radio" name="q34" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 35.jpg" alt="question 35">
+        <p>1</p><input type="radio" name="q35" value="0">
+        <p>2</p><input type="radio" name="q35" value="0">
+        <p>3</p><input type="radio" name="q35" value="0">
+        <p>4</p><input type="radio" name="q35" value="1">
+        <p>5</p><input type="radio" name="q35" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 36.jpg" alt="question 36">
+        <p>1</p><input type="radio" name="q36" value="0">
+        <p>2</p><input type="radio" name="q36" value="0">
+        <p>3</p><input type="radio" name="q36" value="0">
+        <p>4</p><input type="radio" name="q36" value="1">
+        <p>5</p><input type="radio" name="q36" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 37.jpg" alt="question 37">
+        <p>1</p><input type="radio" name="q37" value="0">
+        <p>2</p><input type="radio" name="q37" value="0">
+        <p>3</p><input type="radio" name="q37" value="0">
+        <p>4</p><input type="radio" name="q37" value="0">
+        <p>5</p><input type="radio" name="q37" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 38.jpg" alt="question 38">
+        <p>1</p><input type="radio" name="q38" value="1">
+        <p>2</p><input type="radio" name="q38" value="0">
+        <p>3</p><input type="radio" name="q38" value="0">
+        <p>4</p><input type="radio" name="q38" value="0">
+        <p>5</p><input type="radio" name="q38" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 39.jpg" alt="question 39">
+        <p>1</p><input type="radio" name="q39" value="0">
+        <p>2</p><input type="radio" name="q39" value="0">
+        <p>3</p><input type="radio" name="q39" value="0">
+        <p>4</p><input type="radio" name="q39" value="0">
+        <p>5</p><input type="radio" name="q39" value="1">
+    </div>
+
+    <div class="question">
+        <img src="question 40.jpg" alt="question 40">
+        <p>1</p><input type="radio" name="q40" value="0">
+        <p>2</p><input type="radio" name="q40" value="1">
+        <p>3</p><input type="radio" name="q40" value="0">
+        <p>4</p><input type="radio" name="q40" value="0">
+        <p>5</p><input type="radio" name="q40" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 41.jpg" alt="question 41">
+        <p>1</p><input type="radio" name="q41" value="0">
+        <p>2</p><input type="radio" name="q41" value="1">
+        <p>3</p><input type="radio" name="q41" value="0">
+        <p>4</p><input type="radio" name="q41" value="0">
+        <p>5</p><input type="radio" name="q41" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 42.jpg" alt="question 42">
+        <p>1</p><input type="radio" name="q42" value="0">
+        <p>2</p><input type="radio" name="q42" value="1">
+        <p>3</p><input type="radio" name="q42" value="0">
+        <p>4</p><input type="radio" name="q42" value="0">
+        <p>5</p><input type="radio" name="q42" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 43.jpg" alt="question 43">
+        <p>1</p><input type="radio" name="q43" value="0">
+        <p>2</p><input type="radio" name="q43" value="0">
+        <p>3</p><input type="radio" name="q43" value="1">
+        <p>4</p><input type="radio" name="q43" value="0">
+        <p>5</p><input type="radio" name="q43" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 44.jpg" alt="question 44">
+        <p>1</p><input type="radio" name="q44" value="0">
+        <p>2</p><input type="radio" name="q44" value="1">
+        <p>3</p><input type="radio" name="q44" value="0">
+        <p>4</p><input type="radio" name="q44" value="0">
+        <p>5</p><input type="radio" name="q44" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 45.jpg" alt="question 45">
+        <p>1</p><input type="radio" name="q45" value="0">
+        <p>2</p><input type="radio" name="q45" value="0">
+        <p>3</p><input type="radio" name="q45" value="0">
+        <p>4</p><input type="radio" name="q45" value="1">
+        <p>5</p><input type="radio" name="q45" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 46.jpg" alt="question 46">
+        <p>1</p><input type="radio" name="q46" value="0">
+        <p>2</p><input type="radio" name="q46" value="0">
+        <p>3</p><input type="radio" name="q46" value="0">
+        <p>4</p><input type="radio" name="q46" value="1">
+        <p>5</p><input type="radio" name="q46" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 47.jpg" alt="question 47">
+        <p>1</p><input type="radio" name="q47" value="0">
+        <p>2</p><input type="radio" name="q47" value="1">
+        <p>3</p><input type="radio" name="q47" value="0">
+        <p>4</p><input type="radio" name="q47" value="0">
+        <p>5</p><input type="radio" name="q47" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 48.jpg" alt="question 48">
+        <p>1</p><input type="radio" name="q48" value="0">
+        <p>2</p><input type="radio" name="q48" value="0">
+        <p>3</p><input type="radio" name="q48" value="0">
+        <p>4</p><input type="radio" name="q48" value="1">
+        <p>5</p><input type="radio" name="q48" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 49.jpg" alt="question 49">
+        <p>1</p><input type="radio" name="q49" value="0">
+        <p>2</p><input type="radio" name="q49" value="0">
+        <p>3</p><input type="radio" name="q49" value="0">
+        <p>4</p><input type="radio" name="q49" value="1">
+        <p>5</p><input type="radio" name="q49" value="0">
+    </div>
+
+    <div class="question">
+        <img src="question 50.jpg" alt="question 50">
+        <p>1</p><input type="radio" name="q50" value="0">
+        <p>2</p><input type="radio" name="q50" value="0">
+        <p>3</p><input type="radio" name="q50" value="1">
+        <p>4</p><input type="radio" name="q50" value="0">
+        <p>5</p><input type="radio" name="q50" value="0">
+    </div>
+</form>
+
+    <div class="button">
+        <button onclick="calculateScore()">Submit</button>
+    </div>
+
+    <h2 id="result"></h2>
+    <h3 id="message"></h3>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.paper_button {
+    background-color: white;
+    margin: 20px auto;
+    width: 90%; /* Default width for mobile */
+    max-width: 500px; /* Limit width on larger screens */
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    font-size: 1rem; /* Relative font size for responsiveness */
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%; /* Full width on smaller devices */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .paper_button {
+        margin: 20px auto;
+        width: 500px;
+    }
+
+    button {
+        font-size: 1.2rem;
+        margin: 15px auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .paper_button {
+        margin: 20px auto;
+        width: 60%;
+    }
+}
